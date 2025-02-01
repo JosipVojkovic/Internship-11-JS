@@ -4,7 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>8. Zadatak</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <h2>Unos opreme</h2>
+    <form id="equipmentForm">
+      <input type="text" id="name" placeholder="Naziv opreme" required />
+      <input
+        type="number"
+        id="price"
+        placeholder="Cijena (€)"
+        step="0.01"
+        required
+      />
+      <select id="status">
+        <option value="dostupno">Dostupno</option>
+        <option value="nedostupno">Nedostupno</option>
+      </select>
+      <button type="submit">Dodaj</button>
+    </form>
+
+    <h3>Lista opreme</h3>
+    <ul id="equipmentList"></ul>
+
+    <h3>Statistika</h3>
+    <p id="ratio"></p>
+
+    <script src="script.js"></script>
+  </body>
 </html>
